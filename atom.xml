@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-06-11T15:07:06.237Z</updated>
+  <updated>2020-06-12T05:15:55.737Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,25 +17,27 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>test</title>
-    <link href="http://yoursite.com/2020/06/11/test/"/>
-    <id>http://yoursite.com/2020/06/11/test/</id>
-    <published>2020-06-11T15:06:47.000Z</published>
-    <updated>2020-06-11T15:07:06.237Z</updated>
+    <title>hexo d失败 以及 Github网页无法访问</title>
+    <link href="http://yoursite.com/2020/06/12/hexo-d%E5%A4%B1%E8%B4%A5-%E4%BB%A5%E5%8F%8A-Github%E7%BD%91%E9%A1%B5%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE/"/>
+    <id>http://yoursite.com/2020/06/12/hexo-d%E5%A4%B1%E8%B4%A5-%E4%BB%A5%E5%8F%8A-Github%E7%BD%91%E9%A1%B5%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE/</id>
+    <published>2020-06-12T03:25:50.000Z</published>
+    <updated>2020-06-12T05:15:55.737Z</updated>
     
-    <content type="html"><![CDATA[<p>11111111111112222222222222244444444444444</p>]]></content>
+    <content type="html"><![CDATA[<p>昨天写笔记的时候，上传博客的时候出了点问题。具体来说，hexo g和hexo s都没有问题，但是hexo d的时候报错了。<br><a id="more"></a></p><h1 id="hexo-d失败"><a href="#hexo-d失败" class="headerlink" title="hexo d失败"></a>hexo d失败</h1><p>失败原因：<br><img src="/2020/06/12/hexo-d%E5%A4%B1%E8%B4%A5-%E4%BB%A5%E5%8F%8A-Github%E7%BD%91%E9%A1%B5%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE/1.png" alt></p><p>我开始以为是deploy插件出了问题，于是重新安装了一遍，但是并不能解决这问题。然后一直显示连接超时，但是hexo g和hexo s都没有问题，我就猜想是不是连接到github上的问题。<br>于是打开github官网，一直显示网页无法显示。当时以为网不好，隔了一天再打开时，还是无法访问。确定是github网页的问题。</p><h1 id="github-网页无法访问"><a href="#github-网页无法访问" class="headerlink" title="github 网页无法访问"></a>github 网页无法访问</h1><p>找了很多方法，大多是修改hosts文件解决问题。</p><h2 id="如何获得修改hosts文件的权限"><a href="#如何获得修改hosts文件的权限" class="headerlink" title="如何获得修改hosts文件的权限"></a>如何获得修改hosts文件的权限</h2><p>一般，因为权限问题，无法直接打开hosts文件。我的方法如下：<br>windows下找到文件路径：C:\Windows\System32\drivers\etc，进行如下步骤：<br><img src="/2020/06/12/hexo-d%E5%A4%B1%E8%B4%A5-%E4%BB%A5%E5%8F%8A-Github%E7%BD%91%E9%A1%B5%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE/2.png" alt></p><p>在powershell中输入cmd回车，然后输入notepad hosts，即可修改hosts文件了，修改之后点击“文件”-&gt;“保存”，就可以成功修改并且保存了。</p><h2 id="应该如何修改hosts内容"><a href="#应该如何修改hosts内容" class="headerlink" title="应该如何修改hosts内容"></a>应该如何修改hosts内容</h2><p>1,键入网址：<br><a href="http://github.global.ssl.fastly.net.ipaddress.com/#ipinfo" target="_blank" rel="noopener">http://github.global.ssl.fastly.net.ipaddress.com/#ipinfo</a><br><img src="/2020/06/12/hexo-d%E5%A4%B1%E8%B4%A5-%E4%BB%A5%E5%8F%8A-Github%E7%BD%91%E9%A1%B5%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE/3.png" alt></p><p>2，在上一步的hosts文件中输入这个IP地址：<br><img src="/2020/06/12/hexo-d%E5%A4%B1%E8%B4%A5-%E4%BB%A5%E5%8F%8A-Github%E7%BD%91%E9%A1%B5%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE/4.png" alt><br>！！！注意要把之前的github.com注释掉，我因为看漏了这里的地址，一直没成功。<br>同时为了加快github上传速度，可以将之前在hosts文件中其他的网址部分注释掉。</p><h2 id="刷新网络DNS缓存"><a href="#刷新网络DNS缓存" class="headerlink" title="刷新网络DNS缓存"></a>刷新网络DNS缓存</h2><p>打开dos窗口，执行：ipconfig /flushdns</p><p>现在可以打开 <a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a> 啦！Enjoy it!<br><img src="/2020/06/12/hexo-d%E5%A4%B1%E8%B4%A5-%E4%BB%A5%E5%8F%8A-Github%E7%BD%91%E9%A1%B5%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE/5.png" alt></p><p>然后hexo d成功了！又可以上传笔记文件啦！<br><img src="/2020/06/12/hexo-d%E5%A4%B1%E8%B4%A5-%E4%BB%A5%E5%8F%8A-Github%E7%BD%91%E9%A1%B5%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE/5.png" alt></p><p>欢迎来踩：<a href="https://durriyado.github.io/" target="_blank" rel="noopener">https://durriyado.github.io/</a></p><p>参考链接：<br><a href="https://blog.csdn.net/VariatioZbw/article/details/106632744" target="_blank" rel="noopener">https://blog.csdn.net/VariatioZbw/article/details/106632744</a><br><a href="https://www.cnblogs.com/onelikeone/p/12791969.html" target="_blank" rel="noopener">https://www.cnblogs.com/onelikeone/p/12791969.html</a></p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;11111111111112222222222222244444444444444&lt;/p&gt;
-
-      
+      &lt;p&gt;昨天写笔记的时候，上传博客的时候出了点问题。具体来说，hexo g和hexo s都没有问题，但是hexo d的时候报错了。&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
     
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="github" scheme="http://yoursite.com/tags/github/"/>
+    
+      <category term="网页无法访问" scheme="http://yoursite.com/tags/%E7%BD%91%E9%A1%B5%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE/"/>
     
   </entry>
   
@@ -231,7 +233,7 @@
     <published>2020-05-06T07:14:12.000Z</published>
     <updated>2020-05-06T07:15:57.616Z</updated>
     
-    <content type="html"><![CDATA[<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="请输入密码（很简单的纯数字！）">    <label for="pass">请输入密码（很简单的纯数字！）</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX1/RNYRQYnqRK7/fHggycAVgWMgk6xiJfAsdnC9vnWywpzTdFn/laoQNWxwYPeglqoqO0wfZaeZYB4H220EE2PGOnAOrsAGFTrdqfLzZ5/A687dV/xxTpxRnOACTshlaPnS0nYVCzSHgRXkUXokoWkt+qvlAqxuF1XgmWHxx9sWVa/L/K7pJq7eCWZTdv+d+dEPGTf7ODz+TeaNcdR0obzkw4NxyMqbmVFGohwhuUkcF78IOZypIo67XtiGdkNSi8jPFJqJ6I+926W/3utCEwc+/YNyMEcxRhDQV+bbU42hAFQZOo7uuo1Pu4M1J1niWZVnpDuJ+mjyGhE1jopIQ4Cn3+vbFF2MgXyM=</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    <content type="html"><![CDATA[<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="请输入密码（很简单的纯数字！）">    <label for="pass">请输入密码（很简单的纯数字！）</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX1/K5ZzkwCtMt93P0bz+J70ZGs4JEkBWLbw+WZmOXOUPVpDBCuvtkCj2BTb/wX5Z1aQaZ5/z5poiDbsytFhNJEAOt55VaMTjne0mUgs2PWD2FRjuYu7SRmNGwEZwiWebyzIbDeUTUDyRvJegxT3tZuujlsPfXu3oaO2UduTnKy70/C5Jmjs8MrlrvYVs4JEE0P2xKSg10t3p0x62OxEfryf6fCk0aMDs0DjURCLBLJmwtJtbPBxWpsHB8m8xMuUQhTOvkFOa+lzBt3j8RSExfDOItspsEqOs9kFIcRPl2gVNjlGHAmPlYvUN6vnbYqFoPwwmsvMhaUc/4ZpaMRDYExSJ8axbmPd7+9k=</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
     
     <summary type="html">
     
