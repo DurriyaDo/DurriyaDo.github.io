@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-06-12T05:15:55.737Z</updated>
+  <updated>2020-06-22T14:44:18.338Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux下借助anaconda创建自己的虚拟环境</title>
+    <link href="http://yoursite.com/2020/06/22/Linux%E4%B8%8B%E5%80%9F%E5%8A%A9anaconda%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/"/>
+    <id>http://yoursite.com/2020/06/22/Linux%E4%B8%8B%E5%80%9F%E5%8A%A9anaconda%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</id>
+    <published>2020-06-22T14:21:48.000Z</published>
+    <updated>2020-06-22T14:44:18.338Z</updated>
+    
+    <content type="html"><![CDATA[<p>概要：刚重装linux系统，发现没装anaconda，于是从装anaconda开始、进而创建自己的虚拟环境。<br><a id="more"></a></p><p>一、安装anaconda<br>首先清华镜像站 下载anaconda3。<br><img src="/2020/06/22/Linux%E4%B8%8B%E5%80%9F%E5%8A%A9anaconda%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.png" alt></p><p>复制到/home/username 目录下</p><p>在文件目录下执行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash Anaconda3-5.2.0-Linux-x86_64.sh</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;概要：刚重装linux系统，发现没装anaconda，于是从装anaconda开始、进而创建自己的虚拟环境。&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+    
+      <category term="anaconda" scheme="http://yoursite.com/tags/anaconda/"/>
+    
+      <category term="虚拟环境" scheme="http://yoursite.com/tags/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nowcoder-Java-刷题笔记-持续更新</title>
+    <link href="http://yoursite.com/2020/06/17/Nowcoder-Java-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0-%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/"/>
+    <id>http://yoursite.com/2020/06/17/Nowcoder-Java-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0-%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/</id>
+    <published>2020-06-17T15:07:56.000Z</published>
+    <updated>2020-06-17T15:17:59.808Z</updated>
+    
+    <content type="html"><![CDATA[<p>概要：今天开始总结java学习中的一些基本题目，先从基础题目开始，后续涉及到项目类的题目有时间再总结。用到的软件工具是</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;概要：今天开始总结java学习中的一些基本题目，先从基础题目开始，后续涉及到项目类的题目有时间再总结。用到的软件工具是&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Nowcoder" scheme="http://yoursite.com/tags/Nowcoder/"/>
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="刷题" scheme="http://yoursite.com/tags/%E5%88%B7%E9%A2%98/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo d失败 以及 Github网页无法访问</title>
@@ -60,9 +114,9 @@
     
       <category term="Nowcoder" scheme="http://yoursite.com/tags/Nowcoder/"/>
     
-      <category term="python" scheme="http://yoursite.com/tags/python/"/>
-    
       <category term="刷题" scheme="http://yoursite.com/tags/%E5%88%B7%E9%A2%98/"/>
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
     
   </entry>
   
@@ -83,6 +137,8 @@
     
     
     
+      <category term="远程连接" scheme="http://yoursite.com/tags/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5/"/>
+    
       <category term="Teamviewer" scheme="http://yoursite.com/tags/Teamviewer/"/>
     
       <category term="winscp" scheme="http://yoursite.com/tags/winscp/"/>
@@ -92,8 +148,6 @@
       <category term="putty" scheme="http://yoursite.com/tags/putty/"/>
     
       <category term="cmd" scheme="http://yoursite.com/tags/cmd/"/>
-    
-      <category term="远程连接" scheme="http://yoursite.com/tags/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5/"/>
     
       <category term="工具" scheme="http://yoursite.com/tags/%E5%B7%A5%E5%85%B7/"/>
     
@@ -133,9 +187,9 @@
     <link href="http://yoursite.com/2020/05/26/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5-%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5-vscode/"/>
     <id>http://yoursite.com/2020/05/26/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5-%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5-vscode/</id>
     <published>2020-05-26T15:46:20.000Z</published>
-    <updated>2020-05-29T03:16:44.390Z</updated>
+    <updated>2020-06-23T13:13:25.445Z</updated>
     
-    <content type="html"><![CDATA[<p>背景：使用SFTP协议的情况下，使用vscode实现本地文件和远程文件的同步。<br><a id="more"></a></p><h1 id="左方拓展栏搜索-“SFTP”"><a href="#左方拓展栏搜索-“SFTP”" class="headerlink" title="左方拓展栏搜索 “SFTP”"></a>左方拓展栏搜索 “SFTP”</h1><p><img src="/2020/05/26/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5-%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5-vscode/1.png" alt></p><h1 id="打开sftp-json文件"><a href="#打开sftp-json文件" class="headerlink" title="打开sftp.json文件"></a>打开sftp.json文件</h1><p>先在vscode中创建（打开）要远程的项目，快捷键win+shift+p 打开命令：输入：sftp  即可在该项目的根目录下生成.vscode的文件夹，并生成了一个sftp.json的文件。配置如下：<br>重要的主要是host、username、password以及 remotePath四个参数：<br>host：工作站的IP地址<br>port：ssh的端口<br>username：工作站自己的用户名<br>password：工作站自己的用户密码<br>protocol：协议类型，默认选”sftp”<br>remotePath：工作站上与本地工程同步的文件夹路径，需要和本地工程文件根目录同名（即当地文件工程名和远程文件工程名相同，外部的目录不必一模一样，也做不到一模一样。。。<br><img src="/2020/05/26/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5-%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5-vscode/2.png" alt></p><h1 id="同步全部的工程文件"><a href="#同步全部的工程文件" class="headerlink" title="同步全部的工程文件"></a>同步全部的工程文件</h1><p>同步全部的工程文件，可以在需要同步的文件夹上面右键：选择SFTP:local -&gt; remote，即可同步到远程服务器。<br><img src="/2020/05/26/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5-%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5-vscode/3.png" alt></p><h1 id="同步单一的文件"><a href="#同步单一的文件" class="headerlink" title="同步单一的文件"></a>同步单一的文件</h1><p>同步单一的文件，在以在需要同步的文件上右键，选择SFTP:Upload，即可同步到远程服务器。<br><img src="/2020/05/26/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5-%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5-vscode/4.png" alt></p><h1 id="TIPS"><a href="#TIPS" class="headerlink" title="TIPS:"></a>TIPS:</h1><p>参考链接：<a href="https://blog.csdn.net/sunny327/article/details/81866785" target="_blank" rel="noopener">https://blog.csdn.net/sunny327/article/details/81866785</a></p>]]></content>
+    <content type="html"><![CDATA[<p>背景：使用SFTP协议的情况下，使用vscode实现本地文件和远程文件的同步。<br><a id="more"></a></p><h1 id="左方拓展栏搜索-“SFTP”"><a href="#左方拓展栏搜索-“SFTP”" class="headerlink" title="左方拓展栏搜索 “SFTP”"></a>左方拓展栏搜索 “SFTP”</h1><p><img src="/2020/05/26/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5-%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5-vscode/1.png" alt></p><h1 id="打开sftp-json文件"><a href="#打开sftp-json文件" class="headerlink" title="打开sftp.json文件"></a>打开sftp.json文件</h1><p>先在vscode中创建（打开）要远程的项目，快捷键win+shift+p 打开命令：输入：sftp  即可在该项目的根目录下生成.vscode的文件夹，并生成了一个sftp.json的文件。配置如下：<br>重要的主要是host、username、password以及 remotePath四个参数：<br>host：工作站的IP地址<br>port：ssh的端口<br>username：工作站自己的用户名<br>password：工作站自己的用户密码<br>protocol：协议类型，默认选”sftp”<br>remotePath：工作站上与本地工程同步的文件夹路径，需要和本地工程文件根目录同名（即当地文件工程名和远程文件工程名相同，外部的目录不必一模一样，也做不到一模一样。。。<br><img src="/2020/05/26/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5-%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5-vscode/2.png" alt></p><h1 id="同步全部的工程文件"><a href="#同步全部的工程文件" class="headerlink" title="同步全部的工程文件"></a>同步全部的工程文件</h1><p>同步全部的工程文件，可以在需要同步的文件夹上面右键：选择SFTP:local -&gt; remote，即可同步到远程服务器。<br><img src="/2020/05/26/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5-%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5-vscode/3.png" alt></p><h1 id="同步单一的文件"><a href="#同步单一的文件" class="headerlink" title="同步单一的文件"></a>同步单一的文件</h1><p>同步单一的文件，在以在需要同步的文件上右键，选择SFTP:Upload，即可同步到远程服务器。<br><img src="/2020/05/26/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5-%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5-vscode/4.png" alt></p><h1 id="二次链接"><a href="#二次链接" class="headerlink" title="二次链接"></a>二次链接</h1><h2 id="连接"><a href="#连接" class="headerlink" title="连接"></a>连接</h2><p>在上述情况弄好的情况下，再次调试时，可以遵循以下步骤：<br><img src="/2020/05/26/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5-%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5-vscode/5.png" alt><br>当这里出现一个绿色对勾时，表示已经成功连接上。<br><img src="/2020/05/26/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5-%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5-vscode/6.png" alt></p><h2 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h2><h3 id="可以在此处看到本地和远程的插件安装情况"><a href="#可以在此处看到本地和远程的插件安装情况" class="headerlink" title="可以在此处看到本地和远程的插件安装情况"></a>可以在此处看到本地和远程的插件安装情况</h3><p><img src="/2020/05/26/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5-%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5-vscode/7.png" alt></p><h3 id="正常连接好的情况是这样的"><a href="#正常连接好的情况是这样的" class="headerlink" title="正常连接好的情况是这样的"></a>正常连接好的情况是这样的</h3><p><img src="/2020/05/26/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5-%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5-vscode/8.png" alt></p><h3 id="调试远程代码"><a href="#调试远程代码" class="headerlink" title="调试远程代码"></a>调试远程代码</h3><p>File-&gt; open folder -&gt; 找到你要运行的远程目录下的工程-&gt; OK -&gt;载入文件如下：-&gt; 打开终端，发现是远程终端（下下图），成功！可以开始调试了！<br><img src="/2020/05/26/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5-%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5-vscode/9.png" alt><br><img src="/2020/05/26/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5-%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5-vscode/10.png" alt></p><h1 id="免密操作"><a href="#免密操作" class="headerlink" title="免密操作"></a>免密操作</h1><p>最简单的一篇参考这个：<a href="https://blog.csdn.net/zhangpeterx/article/details/97375233" target="_blank" rel="noopener">https://blog.csdn.net/zhangpeterx/article/details/97375233</a></p><h1 id="TIPS"><a href="#TIPS" class="headerlink" title="TIPS:"></a>TIPS:</h1><p>参考链接：<a href="https://blog.csdn.net/sunny327/article/details/81866785" target="_blank" rel="noopener">https://blog.csdn.net/sunny327/article/details/81866785</a><br><a href="https://www.jianshu.com/p/0f2fb935a9a1" target="_blank" rel="noopener">https://www.jianshu.com/p/0f2fb935a9a1</a></p>]]></content>
     
     <summary type="html">
     
@@ -145,9 +199,9 @@
     
     
     
-      <category term="远程连接" scheme="http://yoursite.com/tags/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5/"/>
-    
       <category term="VScode" scheme="http://yoursite.com/tags/VScode/"/>
+    
+      <category term="远程连接" scheme="http://yoursite.com/tags/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5/"/>
     
       <category term="文件同步" scheme="http://yoursite.com/tags/%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5/"/>
     
@@ -193,11 +247,11 @@
     
     
     
-      <category term="YOLOv4" scheme="http://yoursite.com/tags/YOLOv4/"/>
-    
       <category term="目标检测" scheme="http://yoursite.com/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/"/>
     
       <category term="one-stage" scheme="http://yoursite.com/tags/one-stage/"/>
+    
+      <category term="YOLOv4" scheme="http://yoursite.com/tags/YOLOv4/"/>
     
   </entry>
   
@@ -218,11 +272,11 @@
     
     
     
+      <category term="YOLOv3" scheme="http://yoursite.com/tags/YOLOv3/"/>
+    
       <category term="目标检测" scheme="http://yoursite.com/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/"/>
     
       <category term="one-stage" scheme="http://yoursite.com/tags/one-stage/"/>
-    
-      <category term="YOLOv3" scheme="http://yoursite.com/tags/YOLOv3/"/>
     
   </entry>
   
@@ -233,7 +287,7 @@
     <published>2020-05-06T07:14:12.000Z</published>
     <updated>2020-05-06T07:15:57.616Z</updated>
     
-    <content type="html"><![CDATA[<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="请输入密码（很简单的纯数字！）" />    <label for="pass">请输入密码（很简单的纯数字！）</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX1/IN2y4YLntaLFtew92rNXu6vUp4XJulkeoMQPDJKphiX56C1WiHWR6Wq/DQipGx3QrthZ9Dwb0LhBpaFpdS/fKtL/7ITGP7UJ7I8Z7Hp2cVaLTx+v5+hM+OhvDIWLF98HEjAIcVzU4zaM4DFp0x7yTnxkvm8KcwgyA51sm7MqJxtz64P/0RLXWdzsy3eF59YvVkuxMj1s3fGS8ezmmQxCDsZMrNfBntBdw55ocyc2kjMQO987j2OvkMFQSf4hrGve4cSpHeTImu0z+rO7ZxHbu2aYpisFGZluDputkic6WhqOTSKDDVXiln1fPF4vXKxIWJ4M0llalx8554wMq0kNpV/SEqNsedP8=</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    <content type="html"><![CDATA[<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="请输入密码（很简单的纯数字！）" />    <label for="pass">请输入密码（很简单的纯数字！）</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX19GGLNCQSY9x3BzDXKhksrp3XmqTxO+6HQjv5VXYaeIPLUsfFJtiwqkrtzaOq0lgrlZ6bN2z5IszmGGJ9Lh+Vun/UUVMd8boy+VCqagiBmzDnxLZGxJh9NrC889Ei6Joat3ST7qDjb59HRF7K/++Fat0Oz9Wg4gfGKnPbLihUOnXsdoRucUf17ta1ceQaNrq705LBxwJPsxkcOh1YZqy+5YvMtFGmRuZ4ZzIZyvBxw4j2nCvAjhrt6ZPVcCRVErfai8a5wwcOJK2JPRGzA69bzuebA5BUNMqDm3exDTLuR8Xws1Gixsn8O6W94RA9SRF9j8YuvUBIB0pNDwys6jJKUfu6rzimDb3pE=</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
     
     <summary type="html">
     
