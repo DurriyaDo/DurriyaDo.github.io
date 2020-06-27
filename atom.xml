@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-06-22T14:44:18.338Z</updated>
+  <updated>2020-06-24T03:54:19.630Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,13 +17,28 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Linux 下新建用户且设置新用户权限</title>
+    <link href="http://yoursite.com/2020/06/24/Linux-%E4%B8%8B%E6%96%B0%E5%BB%BA%E7%94%A8%E6%88%B7%E4%B8%94%E8%AE%BE%E7%BD%AE%E6%96%B0%E7%94%A8%E6%88%B7%E6%9D%83%E9%99%90/"/>
+    <id>http://yoursite.com/2020/06/24/Linux-%E4%B8%8B%E6%96%B0%E5%BB%BA%E7%94%A8%E6%88%B7%E4%B8%94%E8%AE%BE%E7%BD%AE%E6%96%B0%E7%94%A8%E6%88%B7%E6%9D%83%E9%99%90/</id>
+    <published>2020-06-24T03:54:19.000Z</published>
+    <updated>2020-06-24T03:54:19.630Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Linux下借助anaconda创建自己的虚拟环境</title>
     <link href="http://yoursite.com/2020/06/22/Linux%E4%B8%8B%E5%80%9F%E5%8A%A9anaconda%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/"/>
     <id>http://yoursite.com/2020/06/22/Linux%E4%B8%8B%E5%80%9F%E5%8A%A9anaconda%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</id>
     <published>2020-06-22T14:21:48.000Z</published>
-    <updated>2020-06-22T14:44:18.338Z</updated>
+    <updated>2020-06-27T13:53:23.149Z</updated>
     
-    <content type="html"><![CDATA[<p>概要：刚重装linux系统，发现没装anaconda，于是从装anaconda开始、进而创建自己的虚拟环境。<br><a id="more"></a></p><p>一、安装anaconda<br>首先清华镜像站 下载anaconda3。<br><img src="/2020/06/22/Linux%E4%B8%8B%E5%80%9F%E5%8A%A9anaconda%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.png" alt></p><p>复制到/home/username 目录下</p><p>在文件目录下执行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash Anaconda3-5.2.0-Linux-x86_64.sh</span><br></pre></td></tr></table></figure></p>]]></content>
+    <content type="html"><![CDATA[<p>概要：刚重装linux系统，发现没装anaconda，于是从装anaconda开始、进而创建自己的虚拟环境。<br><a id="more"></a></p><h1 id="安装anaconda"><a href="#安装anaconda" class="headerlink" title="安装anaconda"></a>安装anaconda</h1><p>1） 首先清华镜像站 下载anaconda3。<br><img src="/2020/06/22/Linux%E4%B8%8B%E5%80%9F%E5%8A%A9anaconda%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.png" alt></p><p>2） 复制到/home/username 目录下<br><img src="/2020/06/22/Linux%E4%B8%8B%E5%80%9F%E5%8A%A9anaconda%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.png" alt></p><p>3） 在文件目录下执行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash Anaconda3-5.2.0-Linux-x86_64.sh</span><br></pre></td></tr></table></figure></p><p>4） 根据提示输入完成安装：<br><img src="/2020/06/22/Linux%E4%B8%8B%E5%80%9F%E5%8A%A9anaconda%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.png" alt><br>此处点击Enter</p><p>5） 出现注册表信息：<br><img src="/2020/06/22/Linux%E4%B8%8B%E5%80%9F%E5%8A%A9anaconda%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/4.png" alt><br>在此点击Enter</p><p>6） 阅读完信息之后，出现提示:<br><img src="/2020/06/22/Linux%E4%B8%8B%E5%80%9F%E5%8A%A9anaconda%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/5.png" alt><br>输入”yes”</p><p>7）提醒你安装位置：<br><img src="/2020/06/22/Linux%E4%B8%8B%E5%80%9F%E5%8A%A9anaconda%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/6.png" alt><br>此处点击Enter</p><p>8）提醒你是否将anaconda加入环境变量：<br><img src="/2020/06/22/Linux%E4%B8%8B%E5%80%9F%E5%8A%A9anaconda%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/7.png" alt><br>此处点击”yes”</p><p>9）提醒你是否安装VScode:<br><img src="/2020/06/22/Linux%E4%B8%8B%E5%80%9F%E5%8A%A9anaconda%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/8.png" alt><br>此处点击”no”(我们多半借用pycharm作为IDE(集成开发环境)，当然这里大家可以根据自己的需要选择是否安装VScode.)</p><p>10）安装到这里，打开终端，输入python，发现用的是Ubuntu系统的python，而不是anaconda自带的python版本。可以进行以下操作：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo gedit ~/.bashrc</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="string">"/home/xupp/anaconda3/bin:<span class="variable">$PATH</span>"</span></span><br><span class="line"><span class="built_in">source</span> ~/.bashrc</span><br></pre></td></tr></table></figure><br>再在终端输入python，终端的默认 python 为 anaconda了，设置成功，至此全部完成。<br><img src="/2020/06/22/Linux%E4%B8%8B%E5%80%9F%E5%8A%A9anaconda%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/9.png" alt></p><h2 id="上述过程中遇到的问题"><a href="#上述过程中遇到的问题" class="headerlink" title="上述过程中遇到的问题"></a>上述过程中遇到的问题</h2><p>由于我之前自己创建了独立的账号，在进行上述最后一步时，报错： IBUS-WARNING **: 23:18:11.359: The owner of /home/dn/.config/ibus/bus is not root!</p><p>这是因为在修改系统文件时我们不能使用sudo命令去修改，必须使用系统内置的管理员权限。最简单的方法是使用gksudo命令启用root编辑或是sudo -i 切换。</p><h2 id="sudo-i"><a href="#sudo-i" class="headerlink" title="sudo -i"></a>sudo -i</h2><p>sudo -i是Linux终端命令下改变用户对命令使用权限的命令。<br>sudo -i是Linux终端命令下改变用户对命令使用权限的命令，例如，在Linux命令终端中，开始为“user@ubuntu:~$”,当使用该命令后，会出现输入密码的提示，之后输入密码，就会变为“root@ubuntu:~#”，这样就是改变了用户对一些命令的权限。</p><h2 id="sudo-i后怎么退到user用户"><a href="#sudo-i后怎么退到user用户" class="headerlink" title="sudo -i后怎么退到user用户"></a>sudo -i后怎么退到user用户</h2><p>命令进行后，输入exit即可注销。</p><h1 id="在anaconda下创建自己的环境"><a href="#在anaconda下创建自己的环境" class="headerlink" title="在anaconda下创建自己的环境"></a>在anaconda下创建自己的环境</h1><p>如何为每一个工程单独建立环境，这是我们训练代码者常做的一项任务。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create -n M3D python=3.5</span><br></pre></td></tr></table></figure></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> activate M3D</span><br></pre></td></tr></table></figure><p>安装torch工具包：<br>通常在终端安装torch包需要花费很长时间，所以我们最好借用清华镜像channel来实现：（最后一句针对你环境所用的cuda版本安装对应版本的torch包，注意你在安装或者更新torch时，里面会帮你安装或者更新cudnn）</p><p>先查看cuda版本（可以看到是的cuda=10.2）：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /usr/<span class="built_in">local</span>/cuda/version.txt (或者nvcc -V)</span><br></pre></td></tr></table></figure><br><img src="/2020/06/22/Linux%E4%B8%8B%E5%80%9F%E5%8A%A9anaconda%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/10.png" alt></p><p>查看是否有torch包：<br>进去python：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import torch</span><br><span class="line"><span class="built_in">print</span>(torch.__version__)</span><br></pre></td></tr></table></figure><br><img src="/2020/06/22/Linux%E4%B8%8B%E5%80%9F%E5%8A%A9anaconda%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/11.png" alt><br>说明没有安装torch工具包。</p><p>再来安装torch包(最后一句以后换别的版本也是通用的，注意改下版本就行)：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge </span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/</span><br><span class="line">conda config --<span class="built_in">set</span> show_channel_urls yes</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">conda install pytorch torchvision cudatoolkit=10.2</span><br></pre></td></tr></table></figure><br>不过我注意到，他在替换我的python版本：3.7-&gt;3.6，这里没有影响（涉及到cuda和cudnn的替换和更新就要注意一下，不然系统容易emmmm你懂的。。。），所以我选择的yes。<br><img src="/2020/06/22/Linux%E4%B8%8B%E5%80%9F%E5%8A%A9anaconda%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/11.png" alt></p>]]></content>
     
     <summary type="html">
     
@@ -137,8 +152,6 @@
     
     
     
-      <category term="远程连接" scheme="http://yoursite.com/tags/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5/"/>
-    
       <category term="Teamviewer" scheme="http://yoursite.com/tags/Teamviewer/"/>
     
       <category term="winscp" scheme="http://yoursite.com/tags/winscp/"/>
@@ -148,6 +161,8 @@
       <category term="putty" scheme="http://yoursite.com/tags/putty/"/>
     
       <category term="cmd" scheme="http://yoursite.com/tags/cmd/"/>
+    
+      <category term="远程连接" scheme="http://yoursite.com/tags/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5/"/>
     
       <category term="工具" scheme="http://yoursite.com/tags/%E5%B7%A5%E5%85%B7/"/>
     
@@ -199,9 +214,9 @@
     
     
     
-      <category term="VScode" scheme="http://yoursite.com/tags/VScode/"/>
-    
       <category term="远程连接" scheme="http://yoursite.com/tags/%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5/"/>
+    
+      <category term="VScode" scheme="http://yoursite.com/tags/VScode/"/>
     
       <category term="文件同步" scheme="http://yoursite.com/tags/%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5/"/>
     
@@ -287,7 +302,7 @@
     <published>2020-05-06T07:14:12.000Z</published>
     <updated>2020-05-06T07:15:57.616Z</updated>
     
-    <content type="html"><![CDATA[<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="请输入密码（很简单的纯数字！）" />    <label for="pass">请输入密码（很简单的纯数字！）</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX19GGLNCQSY9x3BzDXKhksrp3XmqTxO+6HQjv5VXYaeIPLUsfFJtiwqkrtzaOq0lgrlZ6bN2z5IszmGGJ9Lh+Vun/UUVMd8boy+VCqagiBmzDnxLZGxJh9NrC889Ei6Joat3ST7qDjb59HRF7K/++Fat0Oz9Wg4gfGKnPbLihUOnXsdoRucUf17ta1ceQaNrq705LBxwJPsxkcOh1YZqy+5YvMtFGmRuZ4ZzIZyvBxw4j2nCvAjhrt6ZPVcCRVErfai8a5wwcOJK2JPRGzA69bzuebA5BUNMqDm3exDTLuR8Xws1Gixsn8O6W94RA9SRF9j8YuvUBIB0pNDwys6jJKUfu6rzimDb3pE=</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    <content type="html"><![CDATA[<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="请输入密码（很简单的纯数字！）">    <label for="pass">请输入密码（很简单的纯数字！）</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX1+xic5ypLSnnx0pWda92z14DUX0pL7qG48VMWjHSmIBAAymYiB9SraDKKmqCRThI0Z/GGdwW69syqgy/Geasozymo0hDr2ixlw5vLPxm3zM/0DqIDCFWHFV6DtCEj/Np8K2mxItKEmV/iGaaYIQyYuVslns5OQSuN0cxM7JrMA9yKMPFxTLtn4PMRmE1CWyLz6egSk/Xw5hOxie5iQ5Srhz6dIFk6DG7lR3vNmlO1CRPzwpR+/ye/xkQKrWiMt4MqIgRBCYmjNMUT9I4Q8VtJLzT/U2wclachkfHBvZ98n4jCwSie8GESd/juF3IPbBJmuF2LYqDvoqAJdc5qjV5uZm1KxaO7IrGcM=</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
     
     <summary type="html">
     
