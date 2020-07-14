@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-07-14T08:11:58.466Z</updated>
+  <updated>2020-07-14T08:44:59.982Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux中的常见指令</title>
+    <link href="http://yoursite.com/2020/07/14/Linux%E4%B8%AD%E7%9A%84%E5%B8%B8%E8%A7%81%E6%8C%87%E4%BB%A4/"/>
+    <id>http://yoursite.com/2020/07/14/Linux%E4%B8%AD%E7%9A%84%E5%B8%B8%E8%A7%81%E6%8C%87%E4%BB%A4/</id>
+    <published>2020-07-14T08:33:53.000Z</published>
+    <updated>2020-07-14T08:44:59.982Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="安装中的常见指令"><a href="#安装中的常见指令" class="headerlink" title="安装中的常见指令"></a>安装中的常见指令</h1><h2 id="查看Ubuntu-版本："><a href="#查看Ubuntu-版本：" class="headerlink" title="查看Ubuntu 版本："></a>查看Ubuntu 版本：</h2><p>cat /proc/version</p><h2 id="查看cuda版本命令："><a href="#查看cuda版本命令：" class="headerlink" title="查看cuda版本命令："></a>查看cuda版本命令：</h2><p>cat /usr/local/cuda/version.txt（或者nvcc -V）</p><h2 id="查看cudnn版本命令："><a href="#查看cudnn版本命令：" class="headerlink" title="查看cudnn版本命令："></a>查看cudnn版本命令：</h2><p>cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2</p><h2 id="查看pytorch版本的方法："><a href="#查看pytorch版本的方法：" class="headerlink" title="查看pytorch版本的方法："></a>查看pytorch版本的方法：</h2><p>进入python</p><blockquote><blockquote><p>import torch<br>print(torch.<strong>version</strong>)</p></blockquote></blockquote><h1 id="vim编辑脚本"><a href="#vim编辑脚本" class="headerlink" title="vim编辑脚本"></a>vim编辑脚本</h1><h2 id="进入时：insert-插入字符"><a href="#进入时：insert-插入字符" class="headerlink" title="进入时：insert 插入字符"></a>进入时：insert 插入字符</h2><h2 id="退出时：ESC-退出写模式，输入-wq-即可保存修改且退出。"><a href="#退出时：ESC-退出写模式，输入-wq-即可保存修改且退出。" class="headerlink" title="退出时：ESC 退出写模式，输入:wq 即可保存修改且退出。"></a>退出时：ESC 退出写模式，输入:wq 即可保存修改且退出。</h2><p>注意，有些时候需要<strong>ctrl+shift</strong> 再加<strong>：</strong>键才能打出来<strong>：</strong> ；然后如果提示没有权限，那个进入编辑脚本之前，在命令前加上<strong>sudo</strong>。</p><h1 id="Linux：解除文件琐命令"><a href="#Linux：解除文件琐命令" class="headerlink" title="Linux：解除文件琐命令"></a>Linux：解除文件琐命令</h1><h2 id="sudo-chmod-R-777-路径-文件夹或文件"><a href="#sudo-chmod-R-777-路径-文件夹或文件" class="headerlink" title="sudo chmod -R 777 路径(文件夹或文件)"></a>sudo chmod -R 777 路径(文件夹或文件)</h2><p>也可先进入需要解锁的文件夹，然后输入<strong>sudo chmod -R 777 </strong></p><h1 id="查看GPU使用情况："><a href="#查看GPU使用情况：" class="headerlink" title="查看GPU使用情况："></a>查看GPU使用情况：</h1><h2 id="NVIDIA-smi"><a href="#NVIDIA-smi" class="headerlink" title="NVIDIA-smi"></a>NVIDIA-smi</h2><h2 id="查看GPU动态使用情况：（每隔0-5s刷新一次）"><a href="#查看GPU动态使用情况：（每隔0-5s刷新一次）" class="headerlink" title="查看GPU动态使用情况：（每隔0.5s刷新一次）"></a>查看GPU动态使用情况：（每隔0.5s刷新一次）</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">watch -n 0.5 nvidia-smi</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;安装中的常见指令&quot;&gt;&lt;a href=&quot;#安装中的常见指令&quot; class=&quot;headerlink&quot; title=&quot;安装中的常见指令&quot;&gt;&lt;/a&gt;安装中的常见指令&lt;/h1&gt;&lt;h2 id=&quot;查看Ubuntu-版本：&quot;&gt;&lt;a href=&quot;#查看Ubuntu-版本：&quot; cla
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+    
+      <category term="常见指令" scheme="http://yoursite.com/tags/%E5%B8%B8%E8%A7%81%E6%8C%87%E4%BB%A4/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux 下新建用户且设置新用户权限</title>
