@@ -200,7 +200,7 @@
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
         <!--这里样式可以自己定制-->
-        <span class="post-count" style="font-size: 16px;color: grey">0字</span>
+        <span class="post-count" style="font-size: 16px;color: grey">313字</span>
       </span>
     </span>
 
@@ -225,7 +225,18 @@
 
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="1，创建用户目录"><a href="#1，创建用户目录" class="headerlink" title="1，创建用户目录"></a>1，创建用户目录</h1><p>创建新用户：sudo useradd -r -m -s /bin/bash dn</p>
+<p>在 Ubuntu18.04 中，不会在创建用户的时候自动提示设置密码。需要手动执行：sudo passwd dn。来设置新用户的密码。</p>
+<p>其中参数的意义如下：</p>
+<p>-r：建立系统账号<br>-m：自动建立用户的登入目录<br>-s：指定用户登入后所使用的shell</p>
+<p>输入ls /home/，可以看到用户目录被成功创建了</p>
+<h1 id="2，修改用户权限"><a href="#2，修改用户权限" class="headerlink" title="2，修改用户权限"></a>2，修改用户权限</h1><p>这里采用修改/etc/sudoers文件的方法分配用户权限。因为此文件只有r权限，在改动前需要增加w权限，改动后，再去掉w权限。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod +w /etc/sudoers</span><br><span class="line">sudo vim /etc/sudoers</span><br><span class="line"><span class="comment"># 添加下图的配置语句，并且保存修改</span></span><br><span class="line">sudo chmod -w /etc/sudoers</span><br></pre></td></tr></table></figure>
+<p>到此，新用户创建成功，并且用户目录被创建，权限也分配成功。</p>
+<h1 id="3，删除用户"><a href="#3，删除用户" class="headerlink" title="3，删除用户"></a>3，删除用户</h1><p>删除用户的操作分为 3 步：</p>
+<p>执行userdel：sudo userdel dn<br>删除用户目录：sudo rm -rf /home/dn<br>删除用户权限相关配置：删除或者注释掉/etc/sudoers中关于要删除用户的配置，否则无法再次创建同名用户。</p>
+<p>参考：<a href="https://blog.csdn.net/AsuraDong/article/details/83314400" target="_blank" rel="noopener">https://blog.csdn.net/AsuraDong/article/details/83314400</a></p>
+
       
 
       
@@ -233,6 +244,21 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">新用户</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -289,7 +315,7 @@
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
         <!--这里样式可以自己定制-->
-        <span class="post-count" style="font-size: 16px;color: grey">1.5k字</span>
+        <span class="post-count" style="font-size: 16px;color: grey">1.7k字</span>
       </span>
     </span>
 
@@ -298,7 +324,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text" style="font-size: 16px;color: grey">  阅读时长: </span>
-        <span class="post-count" style="font-size: 16px;color: grey">6分</span>
+        <span class="post-count" style="font-size: 16px;color: grey">7分</span>
       </span>
     </span>
 </div>
@@ -1509,6 +1535,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">优化</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">新用户</a>
               </li>
             
             <div class="clearfix"></div>
