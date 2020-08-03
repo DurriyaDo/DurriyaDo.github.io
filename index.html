@@ -200,7 +200,7 @@
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
         <!--这里样式可以自己定制-->
-        <span class="post-count" style="font-size: 16px;color: grey">217字</span>
+        <span class="post-count" style="font-size: 16px;color: grey">240字</span>
       </span>
     </span>
 
@@ -225,18 +225,8 @@
 
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="安装中的常见指令"><a href="#安装中的常见指令" class="headerlink" title="安装中的常见指令"></a>安装中的常见指令</h1><h2 id="查看Ubuntu-版本："><a href="#查看Ubuntu-版本：" class="headerlink" title="查看Ubuntu 版本："></a>查看Ubuntu 版本：</h2><p>cat /proc/version</p>
-<h2 id="查看cuda版本命令："><a href="#查看cuda版本命令：" class="headerlink" title="查看cuda版本命令："></a>查看cuda版本命令：</h2><p>cat /usr/local/cuda/version.txt（或者nvcc -V）</p>
-<h2 id="查看cudnn版本命令："><a href="#查看cudnn版本命令：" class="headerlink" title="查看cudnn版本命令："></a>查看cudnn版本命令：</h2><p>cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2</p>
-<h2 id="查看pytorch版本的方法："><a href="#查看pytorch版本的方法：" class="headerlink" title="查看pytorch版本的方法："></a>查看pytorch版本的方法：</h2><p>进入python</p>
-<blockquote>
-<blockquote>
-<p>import torch<br>print(torch.<strong>version</strong>)</p>
-</blockquote>
-</blockquote>
-<h1 id="vim编辑脚本"><a href="#vim编辑脚本" class="headerlink" title="vim编辑脚本"></a>vim编辑脚本</h1><h2 id="进入时：insert-插入字符"><a href="#进入时：insert-插入字符" class="headerlink" title="进入时：insert 插入字符"></a>进入时：insert 插入字符</h2><h2 id="退出时：ESC-退出写模式，输入-wq-即可保存修改且退出。"><a href="#退出时：ESC-退出写模式，输入-wq-即可保存修改且退出。" class="headerlink" title="退出时：ESC 退出写模式，输入:wq 即可保存修改且退出。"></a>退出时：ESC 退出写模式，输入:wq 即可保存修改且退出。</h2><p>注意，有些时候需要<strong>ctrl+shift</strong> 再加<strong>：</strong>键才能打出来<strong>：</strong> ；然后如果提示没有权限，那个进入编辑脚本之前，在命令前加上<strong>sudo</strong>。</p>
-<h1 id="Linux：解除文件琐命令"><a href="#Linux：解除文件琐命令" class="headerlink" title="Linux：解除文件琐命令"></a>Linux：解除文件琐命令</h1><h2 id="sudo-chmod-R-777-路径-文件夹或文件"><a href="#sudo-chmod-R-777-路径-文件夹或文件" class="headerlink" title="sudo chmod -R 777 路径(文件夹或文件)"></a>sudo chmod -R 777 路径(文件夹或文件)</h2><p>也可先进入需要解锁的文件夹，然后输入<strong>sudo chmod -R 777 </strong></p>
-<h1 id="查看GPU使用情况："><a href="#查看GPU使用情况：" class="headerlink" title="查看GPU使用情况："></a>查看GPU使用情况：</h1><h2 id="NVIDIA-smi"><a href="#NVIDIA-smi" class="headerlink" title="NVIDIA-smi"></a>NVIDIA-smi</h2><h2 id="查看GPU动态使用情况：（每隔0-5s刷新一次）"><a href="#查看GPU动态使用情况：（每隔0-5s刷新一次）" class="headerlink" title="查看GPU动态使用情况：（每隔0.5s刷新一次）"></a>查看GPU动态使用情况：（每隔0.5s刷新一次）</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">watch -n 0.5 nvidia-smi</span><br></pre></td></tr></table></figure>
+        <p>概要：平时会用到各种linux中的操作指令，现在总结一下啦！<br></p>
+        
       
 
       
@@ -315,7 +305,7 @@
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
         <!--这里样式可以自己定制-->
-        <span class="post-count" style="font-size: 16px;color: grey">313字</span>
+        <span class="post-count" style="font-size: 16px;color: grey">333字</span>
       </span>
     </span>
 
@@ -340,18 +330,8 @@
 
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="1，创建用户目录"><a href="#1，创建用户目录" class="headerlink" title="1，创建用户目录"></a>1，创建用户目录</h1><p>创建新用户：sudo useradd -r -m -s /bin/bash dn</p>
-<p>在 Ubuntu18.04 中，不会在创建用户的时候自动提示设置密码。需要手动执行：sudo passwd dn。来设置新用户的密码。</p>
-<p>其中参数的意义如下：</p>
-<p>-r：建立系统账号<br>-m：自动建立用户的登入目录<br>-s：指定用户登入后所使用的shell</p>
-<p>输入ls /home/，可以看到用户目录被成功创建了</p>
-<h1 id="2，修改用户权限"><a href="#2，修改用户权限" class="headerlink" title="2，修改用户权限"></a>2，修改用户权限</h1><p>这里采用修改/etc/sudoers文件的方法分配用户权限。因为此文件只有r权限，在改动前需要增加w权限，改动后，再去掉w权限。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod +w /etc/sudoers</span><br><span class="line">sudo vim /etc/sudoers</span><br><span class="line"><span class="comment"># 添加下图的配置语句，并且保存修改</span></span><br><span class="line">sudo chmod -w /etc/sudoers</span><br></pre></td></tr></table></figure>
-<p>到此，新用户创建成功，并且用户目录被创建，权限也分配成功。</p>
-<h1 id="3，删除用户"><a href="#3，删除用户" class="headerlink" title="3，删除用户"></a>3，删除用户</h1><p>删除用户的操作分为 3 步：</p>
-<p>执行userdel：sudo userdel dn<br>删除用户目录：sudo rm -rf /home/dn<br>删除用户权限相关配置：删除或者注释掉/etc/sudoers中关于要删除用户的配置，否则无法再次创建同名用户。</p>
-<p>参考：<a href="https://blog.csdn.net/AsuraDong/article/details/83314400" target="_blank" rel="noopener">https://blog.csdn.net/AsuraDong/article/details/83314400</a></p>
-
+        <p>概要：关于在linux环境下新建用户并设置用户权限<br></p>
+        
       
 
       
