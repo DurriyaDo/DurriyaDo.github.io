@@ -15,12 +15,16 @@
 <meta property="og:site_name" content="DurriyaDo">
 <meta property="og:description" content="概要：平时会用到各种linux中的操作指令，现在总结一下啦！">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/2020/07/14/Linux%E4%B8%AD%E7%9A%84%E5%B8%B8%E8%A7%81%E6%8C%87%E4%BB%A4/7.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/14/Linux%E4%B8%AD%E7%9A%84%E5%B8%B8%E8%A7%81%E6%8C%87%E4%BB%A4/8.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/14/Linux%E4%B8%AD%E7%9A%84%E5%B8%B8%E8%A7%81%E6%8C%87%E4%BB%A4/9.png">
 <meta property="article:published_time" content="2020-07-14T08:33:53.000Z">
-<meta property="article:modified_time" content="2020-12-14T09:48:11.230Z">
+<meta property="article:modified_time" content="2021-03-08T01:34:34.131Z">
 <meta property="article:author" content="DurriyaDo">
 <meta property="article:tag" content="Linux">
 <meta property="article:tag" content="常见指令">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/07/14/Linux%E4%B8%AD%E7%9A%84%E5%B8%B8%E8%A7%81%E6%8C%87%E4%BB%A4/7.png">
   
     <link rel="alternative" href="/atom.xml" title="DurriyaDo" type="application/atom+xml">
   
@@ -201,7 +205,7 @@
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
         <!--这里样式可以自己定制-->
-        <span class="post-count" style="font-size: 16px;color: grey">413字</span>
+        <span class="post-count" style="font-size: 16px;color: grey">723字</span>
       </span>
     </span>
 
@@ -210,7 +214,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text" style="font-size: 16px;color: grey">  阅读时长: </span>
-        <span class="post-count" style="font-size: 16px;color: grey">1分</span>
+        <span class="post-count" style="font-size: 16px;color: grey">2分</span>
       </span>
     </span>
 </div>
@@ -229,7 +233,7 @@
 	<div id="toc-article" class="toc-article">
 	    <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
 		<strong class="toc-title">文章目录</strong>
-           <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#安装中的常见指令"><span class="toc-number">1.</span> <span class="toc-text">安装中的常见指令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#查看Ubuntu-版本："><span class="toc-number">1.1.</span> <span class="toc-text">查看Ubuntu 版本：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看cuda版本命令："><span class="toc-number">1.2.</span> <span class="toc-text">查看cuda版本命令：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看cudnn版本命令："><span class="toc-number">1.3.</span> <span class="toc-text">查看cudnn版本命令：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看pytorch版本的方法："><span class="toc-number">1.4.</span> <span class="toc-text">查看pytorch版本的方法：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#vim编辑脚本"><span class="toc-number">2.</span> <span class="toc-text">vim编辑脚本</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#进入时：insert-插入字符"><span class="toc-number">2.1.</span> <span class="toc-text">进入时：insert 插入字符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#退出时：ESC-退出写模式，输入-wq-即可保存修改且退出。"><span class="toc-number">2.2.</span> <span class="toc-text">退出时：ESC 退出写模式，输入:wq 即可保存修改且退出。</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Linux：解除文件琐命令"><span class="toc-number">3.</span> <span class="toc-text">Linux：解除文件琐命令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#sudo-chmod-R-777-路径-文件夹或文件"><span class="toc-number">3.1.</span> <span class="toc-text">sudo chmod -R 777 路径(文件夹或文件)</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#查看GPU使用情况："><span class="toc-number">4.</span> <span class="toc-text">查看GPU使用情况：</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#NVIDIA-smi"><span class="toc-number">4.1.</span> <span class="toc-text">NVIDIA-smi</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看GPU动态使用情况：（每隔0-5s刷新一次）"><span class="toc-number">4.2.</span> <span class="toc-text">查看GPU动态使用情况：（每隔0.5s刷新一次）</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#常见快捷键-小技巧"><span class="toc-number">5.</span> <span class="toc-text">常见快捷键(小技巧)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#查看当前文件夹有多少个文件"><span class="toc-number">5.1.</span> <span class="toc-text">查看当前文件夹有多少个文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#把多个终端合并在一个窗口"><span class="toc-number">5.2.</span> <span class="toc-text">把多个终端合并在一个窗口</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在文件夹中显示前n个文件的名称"><span class="toc-number">5.3.</span> <span class="toc-text">在文件夹中显示前n个文件的名称</span></a></li></ol></li></ol>
+           <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#安装中的常见指令"><span class="toc-number">1.</span> <span class="toc-text">安装中的常见指令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#查看Ubuntu-版本："><span class="toc-number">1.1.</span> <span class="toc-text">查看Ubuntu 版本：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看cuda版本命令："><span class="toc-number">1.2.</span> <span class="toc-text">查看cuda版本命令：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看cudnn版本命令："><span class="toc-number">1.3.</span> <span class="toc-text">查看cudnn版本命令：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看pytorch版本的方法："><span class="toc-number">1.4.</span> <span class="toc-text">查看pytorch版本的方法：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#vim编辑脚本"><span class="toc-number">2.</span> <span class="toc-text">vim编辑脚本</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#进入时：insert-插入字符"><span class="toc-number">2.1.</span> <span class="toc-text">进入时：insert 插入字符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#退出时：ESC-退出写模式，输入-wq-即可保存修改且退出。"><span class="toc-number">2.2.</span> <span class="toc-text">退出时：ESC 退出写模式，输入:wq 即可保存修改且退出。</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Linux：解除文件琐命令"><span class="toc-number">3.</span> <span class="toc-text">Linux：解除文件琐命令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#sudo-chmod-R-777-路径-文件夹或文件"><span class="toc-number">3.1.</span> <span class="toc-text">sudo chmod -R 777 路径(文件夹或文件)</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#查看GPU使用情况："><span class="toc-number">4.</span> <span class="toc-text">查看GPU使用情况：</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#NVIDIA-smi"><span class="toc-number">4.1.</span> <span class="toc-text">NVIDIA-smi</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看GPU动态使用情况：（每隔0-5s刷新一次）"><span class="toc-number">4.2.</span> <span class="toc-text">查看GPU动态使用情况：（每隔0.5s刷新一次）</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#常见快捷键-小技巧"><span class="toc-number">5.</span> <span class="toc-text">常见快捷键(小技巧)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#查看当前文件夹有多少个文件"><span class="toc-number">5.1.</span> <span class="toc-text">查看当前文件夹有多少个文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#把多个终端合并在一个窗口"><span class="toc-number">5.2.</span> <span class="toc-text">把多个终端合并在一个窗口</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在文件夹中显示前n个文件的名称"><span class="toc-number">5.3.</span> <span class="toc-text">在文件夹中显示前n个文件的名称</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用ssh命令传输文件的指令："><span class="toc-number">5.4.</span> <span class="toc-text">使用ssh命令传输文件的指令：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#本地-笔记本-终端-cmd-方法："><span class="toc-number">5.5.</span> <span class="toc-text">本地(笔记本)终端 cmd 方法：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#远程服务器终端-putty-mobaxterm-方法："><span class="toc-number">5.6.</span> <span class="toc-text">远程服务器终端 putty&#x2F;mobaxterm 方法：</span></a></li></ol></li></ol>
          </div>
    <script type="text/javascript">
 	function showToc(){
@@ -268,6 +272,15 @@
 <p>2，使用组合键，crtl + shift + t， 这时就在同一个窗口中打开了另一个终端，想要生成多个，可以多按几次ctrl + shift + t。</p>
 <p>3，按组合键alt + 1，就会切换到第一个终端，按alt + 2，就会切换到第二个终端，alt + n 切换到第n个终端。</p>
 <h2 id="在文件夹中显示前n个文件的名称"><a href="#在文件夹中显示前n个文件的名称" class="headerlink" title="在文件夹中显示前n个文件的名称"></a>在文件夹中显示前n个文件的名称</h2><p>假如需要查看前10个文件的名称：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /d <span class="string">'你想要查看的目录'</span></span><br><span class="line">ls |head -n 10</span><br></pre></td></tr></table></figure></p>
+<h2 id="使用ssh命令传输文件的指令："><a href="#使用ssh命令传输文件的指令：" class="headerlink" title="使用ssh命令传输文件的指令："></a>使用ssh命令传输文件的指令：</h2><p>由于上述能够使用ssh指令的工具包括：putty、MobaXteam。但是我们输入ip、端口号之后，进入界面，会依次输入login as: (远程的username)、password，此时出现下面所示，表示已经进入远程服务器：<br><img src="/2020/07/14/Linux%E4%B8%AD%E7%9A%84%E5%B8%B8%E8%A7%81%E6%8C%87%E4%BB%A4/7.png" alt></p>
+<p><img src="/2020/07/14/Linux%E4%B8%AD%E7%9A%84%E5%B8%B8%E8%A7%81%E6%8C%87%E4%BB%A4/8.png" alt></p>
+<h2 id="本地-笔记本-终端-cmd-方法："><a href="#本地-笔记本-终端-cmd-方法：" class="headerlink" title="本地(笔记本)终端 cmd 方法："></a>本地(笔记本)终端 cmd 方法：</h2><p>（默认端口号是22，如果要改的话，需要加上-P 端口号 ）<br>1) 从本地文件夹（笔记本）上传到远程服务器：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp -P 2022 G:/cuda_8.0.44_linux.run username@118.xxx.xx.xxx:/home/...</span><br></pre></td></tr></table></figure></p>
+<p><img src="/2020/07/14/Linux%E4%B8%AD%E7%9A%84%E5%B8%B8%E8%A7%81%E6%8C%87%E4%BB%A4/9.png" alt></p>
+<p>2) 从远程服务器上下载到笔记本:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp username@118.xxx.xx.xxx:/home/...  G:/cuda_8.0.44_linux.run</span><br></pre></td></tr></table></figure></p>
+<h2 id="远程服务器终端-putty-mobaxterm-方法："><a href="#远程服务器终端-putty-mobaxterm-方法：" class="headerlink" title="远程服务器终端 putty/mobaxterm 方法："></a>远程服务器终端 putty/mobaxterm 方法：</h2><p>（我从putty/mobaxterm进入到远程服务器其实就相当于本人在远程服务器面前，此时远程服务器就是“本地”。）<br>1）从笔记本上传文件到服务器：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp 19788@10.xxx.xx.xxx:G:/cuda_8.0.44_linux.run  /home/... （本地指的是服务器）</span><br></pre></td></tr></table></figure></p>
+<p>2）从服务器下载到笔记本:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp /home/...  19788@10.xxx.xx.xxx:G:/cuda_8.0.44_linux.run  （本地指的是服务器）</span><br></pre></td></tr></table></figure></p>
+<p>如果是传送文件夹的话，要在scp后面加上-r </p>
+<p>参考文献：<a href="https://www.cnblogs.com/magicc/p/6490566.html" target="_blank" rel="noopener">https://www.cnblogs.com/magicc/p/6490566.html</a></p>
 
       
 
@@ -565,6 +578,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">新用户</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">常见指令</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">anaconda</a>
               </li>
              
@@ -585,11 +606,27 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">自动挂载</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">硬盘</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">YOLOv4</a>
+                <a href="javascript:void(0)" class="js-tag color3">Windows</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">指纹识别</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">YOLOv3</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -601,11 +638,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Windows</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">指纹识别</a>
+                <a href="javascript:void(0)" class="js-tag color2">YOLOv4</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -618,22 +651,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">网页无法访问</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">创建</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">博客</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">YOLOv3</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -673,11 +690,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">VScode</a>
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">文件同步</a>
+                <a href="javascript:void(0)" class="js-tag color3">创建</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">博客</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -689,27 +710,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">VScode</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">文件同步</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">yilia</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">优化</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">新用户</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">常见指令</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">自动挂载</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">硬盘</a>
               </li>
             
             <div class="clearfix"></div>
